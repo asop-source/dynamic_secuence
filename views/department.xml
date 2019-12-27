@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_department_code_form" model="ir.ui.view">
+            <field name="name">hr.department.form</field>
+            <field name="model">hr.department</field>
+            <field name="inherit_id" ref="hr.view_department_form"/>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <field name="company_id" position="before">
+                    <field name="code"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_department_code_tree" model="ir.ui.view">
+            <field name="name">hr.department.tree</field>
+            <field name="model">hr.department</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="hr.view_department_tree"/>
+            <field name="arch" type="xml">
+                <field name="company_id" position="before">
+                    <field name="code"/>
+                </field>
+            </field>
+        </record>
+    
+    </data>
+</openerp>

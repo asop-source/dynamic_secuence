@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+
+        <!-- update seq project id di vit_project_rab_inherit -->
+		<record id="vit_project_rab_inherit.seq_project_id" model="ir.sequence">
+			<field name="prefix">PRJ-%(company)s-%(location)s-%(unit)s-%(year)s-%(month)s-</field>
+		</record>
+
+
+	</data>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+
+
+
+		<!-- Get our main job done, i.e. modify the domain_force field of a record -->
+		<record id="vit_uudp.uudp_penyelesaian_sequence" model="ir.sequence">
+			<field name="prefix">PBJ-%(company)s-%(location)s-%(unit)s-%(year)s-%(month)s-</field>
+		</record>
+
+	</data>
+</odoo>

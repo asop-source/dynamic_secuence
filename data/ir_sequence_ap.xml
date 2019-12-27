@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+
+        <record id="seq_ap_internal" model="ir.sequence">
+            <field name="name">ap_internal</field>
+            <field name="code">vit.ap_internal</field>
+            <field name="prefix">API-%(company)s-%(location)s-%(unit)s-%(year)s-%(month)s-</field>
+            <field name="padding">3</field>
+            <field name="next_number_actual">1</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">standard</field>
+        </record>
+
+
+        <record id="seq_ap_vendor" model="ir.sequence">
+            <field name="name">ap_vendor</field>
+            <field name="code">vit.ap_vendor</field>
+            <field name="prefix">APV-%(company)s-%(location)s-%(unit)s-%(year)s-%(month)s-</field>
+            <field name="padding">3</field>
+            <field name="next_number_actual">1</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">standard</field>
+        </record>
+
+		<!--<function name="write" model="ir.model.data">-->
+            <!--&lt;!&ndash; First we need to find the record...&ndash;&gt;-->
+            <!--<function name="search" model="ir.model.data">-->
+                <!--<value eval="[('module', '=', 'account'), ('name', '=', 'seq_account_order')]"/>-->
+            <!--</function>-->
+
+           <!--&lt;!&ndash; ...and temporarily set the noupdate field to False&ndash;&gt;-->
+            <!--<value eval="{'noupdate': False}" />-->
+        <!--</function>-->
+
+		<!--&lt;!&ndash; Get our main job done, i.e. modify the domain_force field of a record &ndash;&gt;-->
+		<!--<record id="account.seq_account_order" model="ir.sequence">-->
+			<!--<field name="prefix">APV-%(company)s-%(location)s-%(unit)s-%(year)s-%(month)s-</field>-->
+		<!--</record>-->
+
+		<!--&lt;!&ndash; (Optional) Time to clean our dirty hand, set the previously noupdate False to True again &ndash;&gt;-->
+        <!--<function name="write" model="ir.model.data">-->
+            <!--<function name="search" model="ir.model.data">-->
+                <!--<value eval="[('module', '=', 'account'), ('name', '=', 'seq_account_order')]"/>-->
+            <!--</function>-->
+            <!--<value eval="{'noupdate': True}" />-->
+        <!--</function>-->
+
+	</data>
+</odoo>

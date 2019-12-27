@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+
+
+
+		<!-- Get our main job done, i.e. modify the domain_force field of a record -->
+		<record id="vit_budget_cut.sk_sequence" model="ir.sequence">
+			<field name="prefix">BAD-%(company)s-%(location)s-%(unit)s-%(year)s-%(month)s-</field>
+		</record>
+
+	</data>
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+
+		<record id="vit_budget_relokasi.seq_budget_relok" model="ir.sequence">
+			<field name="prefix">BRL-%(company)s-%(location)s-%(unit)s-%(year)s-%(month)s-</field>
+		</record>
+
+	</data>
+</odoo>

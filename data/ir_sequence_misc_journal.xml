@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+
+        <record id="seq_misc_journal" model="ir.sequence">
+            <field name="name">misc_journal</field>
+            <field name="code">vit.misc_journal</field>
+            <field name="prefix">GLJ-%(company)s-%(location)s-%(unit)s-%(year)s-%(month)s-</field>
+            <field name="padding">3</field>
+            <field name="next_number_actual">1</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">standard</field>
+        </record>
+
+
+	</data>
+</odoo>
